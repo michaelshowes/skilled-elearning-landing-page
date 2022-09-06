@@ -1,0 +1,24 @@
+// Imported Fonts
+
+// Headers
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  @include font-weight(semibold);
+  margin: 0 0 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
