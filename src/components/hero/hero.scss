@@ -1,0 +1,8 @@
+.hero {
+  @extend %grid-columns;
+  @include grid-placement(full-bleed);
+
+  &-container {
+    @include grid-placement;
+  }
+}

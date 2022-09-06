@@ -1,0 +1,36 @@
+// Gradient
+//
+// Mixin description
+//
+// $param  = null - Parameter description
+//
+// Definition:
+// @mixin gradient($param: null) {
+//
+// }
+//
+// Usage:
+// .sample {
+//   @include gradient;
+// }
+//
+// Compiled:
+// .sample {
+//
+// }
+//
+@mixin gradient-1($param: null) {
+  @include linear-gradient(#f02aa6, #ff6f48);
+}
+
+@mixin gradient-1-hover($param: null) {
+  @include linear-gradient(rgba(#f02aa6, .5), rgba(#ff6f48, .5));
+}
+
+@mixin gradient-2($param: null) {
+  @include linear-gradient(#f02aa6, #4851ff);
+}
+
+@mixin gradient-2-hover($param: null) {
+  @include linear-gradient(rgba(#f02aa6, .5), rgba(#4851ff, .5));
+}

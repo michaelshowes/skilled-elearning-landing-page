@@ -155,9 +155,9 @@ exports.dev = series(
   jsTask,
   jqTransfer,
   fontsTransfer,
+  optimizeImage,
   browserSyncServe,
   browserSyncReload,
-  optimizeImage,
   watchTask
 );
 

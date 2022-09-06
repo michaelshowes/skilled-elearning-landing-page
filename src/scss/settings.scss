@@ -24,10 +24,11 @@ $slices: (
 );
 
 $arial: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$jakarta: 'Plus Jakarta Sans', sans-serif;
 
 // type variables
-$body-font: $arial;
-$header-font: $arial;
+$body-font: $jakarta;
+$header-font: $jakarta;
 
 ///////////////////////////////////////////////////////////////
 // NOTE: If you change this, you also need to change $rem-baseline
@@ -36,7 +37,7 @@ $header-font: $arial;
 $base-font-size: 16px;
 
 $component-margin: 120px;
-$inner-max-width: 1600px;
+$inner-max-width: 1110px;
 
 // radius
 $border-radius: 3px;

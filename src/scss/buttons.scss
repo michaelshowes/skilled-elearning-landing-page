@@ -3,12 +3,13 @@ button {
   cursor: pointer;
   appearance: none;
   backface-visibility: hidden;
-  background: none;
-  color: inherit;
+  background-color: primary-color(violet, 3);
+  color: white;
   font: inherit;
   border: 0;
-  line-height: 1;
-  padding: 0;
+  border-radius: 10%;
+  @include line-height(28, 18);
+  padding: 14px 32px;
   transition: $ts $te;
 
   &:disabled,

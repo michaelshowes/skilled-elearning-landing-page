@@ -13,6 +13,40 @@ a {
   text-decoration: none;
   transition: $ts $te;
 
+  &.button {
+    cursor: pointer;
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: primary-color(violet, 3);
+    color: white;
+    font: inherit;
+    border: 0;
+    border-radius: 30px;
+    @include line-height(28, 18);
+    padding: 14px 32px;
+    transition: $ts $te;
+
+    @include hover {
+      background-color: primary-color(violet, 2);
+    }
+
+    &.-gradient1 {
+      @include gradient-1;
+
+      @include hover {
+        @include gradient-1-hover;
+      }
+    }
+
+    &.-gradient2 {
+      @include gradient-2;
+
+      @include hover {
+        @include gradient-2-hover;
+      }
+    }
+  }
+
   &:disabled,
   &[disabled] {
     opacity: .5;

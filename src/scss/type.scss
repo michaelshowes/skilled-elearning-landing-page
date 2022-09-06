@@ -1,12 +1,34 @@
 // Imported Fonts
+//
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/plus-jakarta-sans-500.woff2') format('woff2');
+}
+
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/plus-jakarta-sans-700.woff2') format('woff2');
+}
+
+/* plus-jakarta-sans-800 - latin */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/plus-jakarta-sans-800.woff2') format('woff2');
+}
 
 // Headers
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
+.h-s,
+.h-m,
+.h-l,
+.h-xl,
 h1,
 h2,
 h3,
@@ -14,7 +36,8 @@ h4,
 h5,
 h6 {
   font-family: $header-font;
-  @include font-weight(semibold);
+  color: primary-color(violet, 3);
+  @include font-weight(extra-bold);
   margin: 0 0 20px;
 
   &:last-child {
@@ -22,3 +45,34 @@ h6 {
   }
 }
 
+.h-s {
+  @include font-clamp(rem(20px), 3vw, rem(24px));
+  @include line-height(28, 24);
+}
+
+.h-m {
+  @include font-clamp(rem(24px), 4vw, rem(32px));
+  @include line-height(40, 32);
+}
+
+.h-l {
+  @include font-clamp(rem(32px), 5vw, rem(40px));
+  @include line-height(51, 40);
+}
+
+.h-xl {
+  @include font-clamp(rem(40px), 7.2vw, rem(56px));
+  @include line-height(70, 56);
+}
+
+// Paragraphs
+p {
+  @include font-clamp(rem(16px), 3vw, rem(18px));
+  @include line-height(28, 18);
+
+  &.-med {
+    @include font-clamp(rem(14px), 3vw, rem(16px));
+    @include line-height(28, 16);
+    @include font-weight(bold);
+  }
+}

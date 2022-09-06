@@ -12,6 +12,15 @@ $primarycolors: (
     2: #666,
     3: #333,
     4: #1a1a1a
+  ),
+  violet: (
+    1: #83869a,
+    2: #666ca3,
+    3: #13183f
+  ),
+  pink: (
+    1:#ffa7c3,
+    2:#f74780
   )
 );
 
@@ -35,5 +44,5 @@ $socialmediacolors: (
 );
 
 // Body colors
-$body-color: black;
+$body-color: primary-color(violet);
 $body-bg-color: white;
